@@ -1,0 +1,12 @@
+
+function generateVideo(){
+document.getElementById("result").innerText=
+"Video generation module ready for AI integration.";
+}
+function generateVoice(){
+let text=document.getElementById("prompt").value;
+let speech = new SpeechSynthesisUtterance(text);
+speechSynthesis.speak(speech);
+document.getElementById("result").innerText=
+"Voice generated.";
+}
